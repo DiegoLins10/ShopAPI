@@ -1,6 +1,4 @@
-Aqui está o README atualizado com a explicação do código que você forneceu:
 
-```markdown
 # API de Consumers
 
 Esta é uma API desenvolvida para gerenciar consumidores, utilizando os padrões Mediator e CQRS (Command Query Responsibility Segregation). A API permite a realização de operações CRUD (Create, Read, Update, Delete) em consumidores de forma eficiente e organizada.
