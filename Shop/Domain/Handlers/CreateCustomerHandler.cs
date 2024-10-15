@@ -1,19 +1,23 @@
-﻿using Shop.Domain.Commands.Requests;
+﻿using MediatR;
+using Shop.Domain.Commands.Requests;
 using Shop.Domain.Commands.Responses;
 
 namespace Shop.Domain.Handlers
 {
-    public class CreateCustomerHandler : ICreateCustomerHandler
+    public class CreateCustomerHandler : IRequestHandler<CreateCustomerRequest, CreateCustomerResponse>
     {
-        public CreateCustomerResponse Handle(CreateCustomerRequest request)
+
+        public Task<CreateCustomerResponse> Handle(CreateCustomerRequest request, CancellationToken cancellationToken)
         {
-            return new CreateCustomerResponse
+            var result = new CreateCustomerResponse
             {
                 Id = Guid.NewGuid(),
                 Name = "Diego Lins",
                 Email = "diegolins@ibm.com",
                 Date = DateTime.Now
             };
+
+            return Task.FromResult(result);
         }
     }
 }
