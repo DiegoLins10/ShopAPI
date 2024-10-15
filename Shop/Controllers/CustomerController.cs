@@ -5,7 +5,7 @@ using Shop.Domain.Handlers;
 
 namespace Shop.Controllers
 {
-    [Route("[controller]/v1/")]
+    [Route("v1/[controller]")]
     [ApiController]
     public class CustomerController : ControllerBase
     {
