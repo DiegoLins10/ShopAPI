@@ -58,7 +58,7 @@ namespace Shop.Controllers
 }
 ```
 
-### Explicação do Código
+### Explicação do Código Controller
 
 1. **Imports**: As primeiras linhas importam os namespaces necessários, incluindo `MediatR` para o padrão Mediator e `Microsoft.AspNetCore.Mvc` para as funcionalidades da API.
 
@@ -100,7 +100,7 @@ namespace Shop.Domain.Handlers
 }
 ```
 
-### Explicação do Código
+### Explicação do Código com o Mediator
 
 1. **Imports**:
    - `using MediatR;`: Importa a biblioteca MediatR, que implementa o padrão Mediator, facilitando a comunicação entre diferentes partes da aplicação.
