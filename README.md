@@ -32,7 +32,7 @@ Esta é uma API desenvolvida para gerenciar consumidores, utilizando os padrões
 - **Data**: Contém o contexto do banco de dados e as configurações necessárias.
 - **Handlers**: Contém os manipuladores para os comandos e consultas.
 
-## Código
+## Controller
 
 Aqui está um exemplo de como a API processa a criação de um consumidor:
 
@@ -73,7 +73,10 @@ namespace Shop.Controllers
    - Ele recebe um comando `CreateCustomerRequest`, que contém os dados necessários para criar um novo consumidor, e utiliza o MediatR para enviar este comando.
    - O `mediator.Send(command)` envia o comando para o manipulador apropriado que executará a lógica de criação do consumidor. O resultado é retornado como um `Task<CreateCustomerResponse>`, que representa a resposta da criação do consumidor.
 
-Aqui está uma explicação detalhada do código que você forneceu para o manipulador de criação de consumidores (`CreateCustomerHandler`):
+
+## Mediator
+
+Aqui está uma explicação detalhada do código para o manipulador de criação de consumidores (`CreateCustomerHandler`):
 
 ```csharp
 using MediatR;
@@ -100,7 +103,7 @@ namespace Shop.Domain.Handlers
 }
 ```
 
-### Explicação do Código com o Mediator
+### Explicação do Código
 
 1. **Imports**:
    - `using MediatR;`: Importa a biblioteca MediatR, que implementa o padrão Mediator, facilitando a comunicação entre diferentes partes da aplicação.
